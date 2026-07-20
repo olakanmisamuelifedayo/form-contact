@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+</head>
+<body>
+    <div class="mx-auto w-[80%]  bg-white pt-7 mt-10">
+        <h1 class="text-6xl ml-10 pt-10 text-[#132c2f] font-semibold ">Contact Us</h1>
+    
+        <form class="text-3xl w-[100%] h-fit rounded-xl grid mt-10 gap-5 md:grid-cols-2 justify-self-center">
+            <div class="grid text-[#636769]">
+                <label class="gap-2" for="firstname">First Name <span class="text-[#3f695b]">*</span></label>
+                <input class="w-[80%] h-20 border-2 border-gray-600 rounded-lg text-gray-600 md:w-[100%]" type="text" id="fname" name="name" >
+            </div>
+            <div class="grid text-[#636769] ">
+                <label for="lastname">Last Name <span class="text-[#3f695b]">*</span></label>
+                <input class="w-[80%] h-20 border-2 border-gray-600 rounded-lg md:w-[100%]" type="text" id="fname" name="name" >
+            </div>
+            <div class="grid text-[#636769]  gap-5 md:col-span-2 w-full">
+                <label for="Email">Email Address <span class="text-[#3f695b]">*</span></label>
+                <input class="w-[80%] h-20 border-2 border-gray-600 rounded-lg md:w-[100%]" type="text" id="fname" name="name" >
+            </div>
+            
+                <label for="query" class="md:col-span-2">Query Type <span class="text-[#3f695b]">*</span></label>
+                <div class="w-[80%] h-20 border-2 border-gray-600 rounded-lg flex gap-5 md:w-[100%]">
+                    <button class="w-10 h-10 rounded-full border-2 self-center ml-5"></button>
+                    <h1 class="self-center">General Enquiry</h1>
+                </div>
+                <div class="w-[80%] h-20 border-2 border-gray-600 rounded-lg flex gap-5 md:w-[100%]">
+                    <button class="w-10 h-10 rounded-full border-2 self-center ml-5 "></button>
+                    <h1 class="self-center">Support Request</h1>
+                </div>
+        
+            <div class="grid text-[#636769] gap-5 md:col-span-2">
+                <label for="message">Message <span class="text-[#3f695b]">*</span></label>
+                <input class="w-[80%] h-100 border-2 border-gray-600 rounded-lg md:w-[100%] md:h-50" type="text" id="fname" name="name" >
+            </div>
+            
+             <div class="flex text-2xl text-[#636769]">
+                 <input class="w-[10%] border-2 border-gray-600 rounded-lg" type="checkbox" id="vehicle1" name="response" value="available">
+                <label for="response"> I consent to being contacted by the team *</label>
+                </div>
+        </form>
+        <div class="justify-self-center w-[80%] pb-10 md:w-[100%]">
+        <BUtton class="text-white bg-[#0c7d69] w-[100%] h-28 rounded-3xl mt-10 self-center text-4xl font-bold justify-self-center mx-auto">Submit</BUtton>
+        </div>
+     </div>
+</body>
+</html>
